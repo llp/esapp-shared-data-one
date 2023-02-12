@@ -306,7 +306,7 @@ export default {
 
     },
     onPutSharedIntButtonClicked() {
-      ESSharedDataManager.putSharedInt(this.sharedPackageName, "intKey", 10)
+      ESSharedDataManager.putSharedInt(this.sharedPackageName, "intKey", 20)
         .then(value => {
             ESToast.showToast("putSharedInt success");
           },
@@ -316,7 +316,7 @@ export default {
         );
     },
     onPutSharedLongButtonClicked() {
-      ESSharedDataManager.putSharedLong(this.sharedPackageName, "longKey", 100)
+      ESSharedDataManager.putSharedLong(this.sharedPackageName, "longKey", 200)
         .then(value => {
             ESToast.showToast("putSharedLong success");
           },
@@ -336,7 +336,7 @@ export default {
         );
     },
     onPutSharedArrayButtonClicked() {
-      ESSharedDataManager.putSharedArray(this.sharedPackageName, "arrayKey", [4])
+      ESSharedDataManager.putSharedArray(this.sharedPackageName, "arrayKey", [5])
         .then(value => {
             ESToast.showToast("putSharedArray success");
           },
@@ -346,7 +346,7 @@ export default {
         );
     },
     onPutSharedMapButtonClicked() {
-      ESSharedDataManager.putSharedMap(this.sharedPackageName, "mapKey", {mapIntKey: 20})
+      ESSharedDataManager.putSharedMap(this.sharedPackageName, "mapKey", {intKey: 10})
         .then(value => {
             ESToast.showToast("putSharedMap success");
           },
