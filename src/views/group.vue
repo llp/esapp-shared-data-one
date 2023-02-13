@@ -75,7 +75,7 @@ import {ESPage, ESToast} from "@extscreen/es-core";
 import {ESGroupDataManager} from "@extscreen/es-group-data";
 
 export default {
-  name: '共享数据测试一',
+  name: '用户组共享数据测试一',
   mixins: [ESPage],
   data() {
     return {
